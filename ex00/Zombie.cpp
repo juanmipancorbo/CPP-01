@@ -1,0 +1,28 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/03/25 18:43:27 by jpancorb          #+#    #+#             */
+/*   Updated: 2025/03/25 20:08:59 by jpancorb         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "Zombie.hpp"
+
+	// Default constructor
+Zombie::Zombie() : _name("Unnamed Zombie") {}
+
+	// Name Constructor
+Zombie::Zombie(const std::string &name) : _name(name) {}
+
+	// Destructor
+Zombie::~Zombie() { std::cout << _name << " is destroyed." << std::endl; }
+
+	// Other Methods
+void	Zombie::announce() const
+{
+	std::cout << _name << ": BraiiiiiiinnnzzzZ..." << std::endl;
+}
