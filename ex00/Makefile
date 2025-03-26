@@ -6,14 +6,14 @@
 #    By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/03/25 18:26:41 by jpancorb          #+#    #+#              #
-#    Updated: 2025/03/25 20:16:30 by jpancorb         ###   ########.fr        #
+#    Updated: 2025/03/26 18:54:03 by jpancorb         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	= braiiiiiiinnnzzzz
 SRCS	= main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
-HEADER	= Zombie.hpp
-CFLAGS	= -Wall -Wextra -Werror -std=c++98
+DEP		= Zombie.hpp
+CFLAGS	= -Wall -Wextra -Werror -std=c++98 -g -fsanitize=leak
 
 OBJS	= $(SRCS:.cpp=.o)
 
@@ -22,7 +22,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 		c++ $(CFLAGS) -o $@ $^
 
-%.o: %.cpp $(HEADER)
+%.o: %.cpp $(DEP)
 		c++ $(CFLAGS) -c $< -o $@
 
 clean:
