@@ -6,7 +6,7 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 19:30:26 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/04/01 19:48:11 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/04/01 19:53:33 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,4 +30,6 @@ int	main()
 	std::cout << "Value of string variable: " << brain << std::endl;
 	std::cout << "Value pointed to by stringPTR: " << *stringPTR << std::endl;
 	std::cout << "Value pointed to by stringREF: " << stringREF << std::endl;
+
+	return 0;
 }
