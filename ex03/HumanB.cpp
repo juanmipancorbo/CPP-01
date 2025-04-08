@@ -6,11 +6,13 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 21:05:57 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/04/01 21:50:05 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/04/08 23:36:22 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include	"HumanB.hpp"
+#include	<string>
+#include	<iostream>
 
 
 HumanB::HumanB(const std::string &name)

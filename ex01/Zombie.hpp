@@ -6,15 +6,15 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/26 19:30:24 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/03/26 19:48:04 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/04/08 23:33:08 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef		ZOMBIE_HPP
-# define 	ZOMBIE_HPP
+#define 	ZOMBIE_HPP
 
-# include	<iostream>
-# include	<string>
+#include	<string>
+
 
 class Zombie
 {
@@ -33,5 +33,6 @@ class Zombie
 		void	announce() const;
 		void	set_name(std::string name);	
 };
+
 
 #endif	 // ZOMBIE_HPP

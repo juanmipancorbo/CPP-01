@@ -6,11 +6,14 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/26 19:30:52 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/03/26 20:02:02 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/04/08 23:32:59 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include	"Zombie.hpp"
+#include	<string>
+#include	<iostream>
+
 
 	// Default constructor
 Zombie::Zombie() : _name("Unnamed Zombie") {}

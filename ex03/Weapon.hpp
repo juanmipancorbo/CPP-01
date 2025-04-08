@@ -6,14 +6,14 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 20:08:04 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/04/01 20:49:20 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/04/08 23:38:04 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef		WEAPON_HPP
-# define	WEAPON_HPP
+#define		WEAPON_HPP
 
-# include	<string>
+#include	<string>
 
 
 class Weapon 
