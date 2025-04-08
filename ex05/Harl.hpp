@@ -1,30 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/25 18:43:27 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/04/08 23:51:48 by jpancorb         ###   ########.fr       */
+/*   Created: 2025/04/08 23:40:33 by jpancorb          #+#    #+#             */
+/*   Updated: 2025/04/08 23:42:43 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	"Zombie.hpp"
-#include	<iostream>
+#ifndef HARL_HPP
+#define HARL_HPP
 
+#include <string>
 
-	// Default constructor
-Zombie::Zombie() : _name("Unnamed Zombie") {}
-
-	// Name Constructor
-Zombie::Zombie(const std::string &name) : _name(name) {}
-
-	// Destructor
-Zombie::~Zombie() { std::cout << _name << " is destroyed." << std::endl; }
-
-	// Other Methods
-void	Zombie::announce() const
+class Harl
 {
-	std::cout << _name << ": BraiiiiiiinnnzzzZ..." << std::endl;
-}
+	private:
+		void	debug(void);
+		void	info(void);
+		void	warning(void);
+		void	error(void);
+
+	public:
+		Harl(void);
+		~Harl(void);
+
+		void	complain(std::string level);
+};
+
+#endif

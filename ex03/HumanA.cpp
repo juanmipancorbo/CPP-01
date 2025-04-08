@@ -6,12 +6,11 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 20:49:56 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/04/08 23:36:01 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/04/08 23:53:51 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include	"HumanA.hpp"
-#include	<string>
 #include	<iostream>
 
 
