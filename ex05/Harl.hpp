@@ -6,7 +6,7 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 23:40:33 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/04/09 00:14:19 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/04/09 21:08:12 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ class Harl
 		Harl(void);
 		~Harl(void);
 
-		void	complain(std::string level);
+		void	complain(std::string input);
 };
 
 #endif

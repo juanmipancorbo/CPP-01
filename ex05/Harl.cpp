@@ -6,7 +6,7 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 23:43:01 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/04/09 00:20:44 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/04/09 21:25:08 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,28 +19,28 @@ Harl::~Harl(void) {}
 
 
 void Harl::debug(void) {
-	std::cout << "I love having extra bacon for my 7XL-double-cheese-triple-pickle-special-ketchup burger. I really do!" << std::endl;
+	std::cout << "<Contextual information>" << std::endl;
 }
 
 void Harl::info(void) {
-	std::cout << "I cannot believe adding extra bacon costs more money. You didn't put enough bacon in my burger! If you did, I wouldn't be asking for more!" << std::endl;
+	std::cout << "<Extensive information>" << std::endl;
 }
 
 void Harl::warning(void) {
-	std::cout << "I think I deserve to have some extra bacon for free. I've been coming for years, whereas you started working here just last month." << std::endl;
+	std::cout << "<Potential issue in the system>" << std::endl;
 }
 
 void Harl::error(void) {
-	std::cout << "This is unacceptable! I want to speak to the manager now." << std::endl;
+	std::cout << "<An unrecoverable error has occurred>" << std::endl;
 }
 
-void Harl::complain(std::string level)
+void Harl::complain(std::string input)
 {
 	// Typedef for a pointer to a member function
 	typedef void (Harl::*complain_ptr)(void);
 
 	// Array of pointers to member functions
-	complain_ptr functions[4] =
+	complain_ptr function[4] =
 	{
 		&Harl::debug,
 		&Harl::info,
@@ -49,7 +49,7 @@ void Harl::complain(std::string level)
 	};
 	
 	// Array of strings to funcion/level names
-	std::string levels[4] =
+	std::string level[4] =
 	{
 		"DEBUG",
 		"INFO",
@@ -59,12 +59,12 @@ void Harl::complain(std::string level)
 
 	for (int i = 0; i < 4; ++i)
 	{
-		if (levels[i] == level)
+		if (level[i] == input)
 		{
-			(this->*functions[i])();
+			(this->*function[i])();
 			return;
 		}
 	}
 	// If any function/level name found
-	std::cout << "Harl does not complain at that level." << std::endl;
+	std::cout << "Incorrect level, Harl does nothing." << std::endl;
 }
