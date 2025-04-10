@@ -6,13 +6,13 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/26 19:32:08 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/04/10 17:47:03 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/04/10 18:25:51 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 #include <string>
-#include <sstream>
+#include <sstream> //ostringstream (create strings from other type of data)
 
 
 Zombie* zombieHorde( int N, std::string name )
