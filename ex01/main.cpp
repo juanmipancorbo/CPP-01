@@ -6,15 +6,15 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/26 20:16:02 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/04/08 23:34:03 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/04/10 17:45:55 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	"Zombie.hpp"
-#include	<cstdlib>
-#include	<string>
-#include	<cctype>
-#include	<iostream>
+#include "Zombie.hpp"
+#include <cstdlib>
+#include <string>
+#include <cctype>
+#include <iostream>
 
 
 bool is_all_spaces(const std::string &str)

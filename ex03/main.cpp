@@ -6,13 +6,13 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 21:12:05 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/04/03 17:56:08 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/04/10 17:48:19 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	"Weapon.hpp"
-#include	"HumanA.hpp"
-#include	"HumanB.hpp"
+#include "Weapon.hpp"
+#include "HumanA.hpp"
+#include "HumanB.hpp"
 
 
 int main()

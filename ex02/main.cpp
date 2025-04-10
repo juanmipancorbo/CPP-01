@@ -6,12 +6,12 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 19:30:26 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/04/08 23:34:36 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/04/10 17:47:29 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	<iostream>
-#include	<string>
+#include <iostream>
+#include <string>
 
 
 int	main()

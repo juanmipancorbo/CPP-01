@@ -6,15 +6,15 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 20:59:12 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/04/08 23:37:06 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/04/10 17:48:13 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef		HUMANB_HPP
-#define		HUMANB_HPP
+#ifndef HUMANB_HPP
+#define HUMANB_HPP
 
-#include	"Weapon.hpp"
-#include	<string>
+#include "Weapon.hpp"
+#include <string>
 
 
 class HumanB

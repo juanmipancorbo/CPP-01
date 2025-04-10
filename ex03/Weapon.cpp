@@ -6,11 +6,11 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/01 20:39:32 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/04/08 23:54:13 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/04/10 17:48:26 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	"Weapon.hpp"
+#include "Weapon.hpp"
 
 
 Weapon::Weapon(const std::string &type) : _type(type) {}
