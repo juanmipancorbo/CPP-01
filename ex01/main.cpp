@@ -6,7 +6,7 @@
 /*   By: jpancorb <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/26 20:16:02 by jpancorb          #+#    #+#             */
-/*   Updated: 2025/04/10 19:19:25 by jpancorb         ###   ########.fr       */
+/*   Updated: 2025/04/14 18:38:42 by jpancorb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int	main()
 					"How many zombies would you like to create?: " << std::endl;
 
 	std::getline(std::cin, nbr_str);
-	size_t nbr_int = std::atoi(nbr_str.c_str());
+	int nbr_int = std::atoi(nbr_str.c_str());
 	while (nbr_int < 1)
 	{
 		std::cout << "We need more than 0...\nTry again" << std::endl;
@@ -57,7 +57,7 @@ int	main()
 
 	Zombie* horde = zombieHorde( nbr_int, input_name );
 
-	for (size_t i = 0; i < nbr_int; i++)
+	for (int i = 0; i < nbr_int; i++)
 		horde[i].announce();
 		
 	delete [] horde;
